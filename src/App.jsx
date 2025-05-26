@@ -137,19 +137,9 @@ function App() {
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="mb-6">
-            <div className="w-20 h-20 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-violet-500/25">
-              <span className="text-3xl">🧠</span>
-            </div>
-          </div>
           <h1 className="text-4xl font-bold text-white mb-2 tracking-tight">
             DeepFocus
           </h1>
-          <p className="text-slate-400 text-sm">
-            {isElectron 
-              ? "🖥️ Desktop App - Full Background Support" 
-              : "🌐 Web App - Keep tab active"}
-          </p>
           
           {!isElectron && notificationPermission !== 'granted' && (
             <button

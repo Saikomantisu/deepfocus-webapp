@@ -102,13 +102,6 @@ const ActiveTask = ({ task, isActive, timeElapsed, onPause, onResume, onStop }) 
           ⏹️ End Session
         </button>
       </div>
-
-      {/* Tip */}
-      <div className="mt-6 p-3 bg-violet-500/10 border border-violet-500/20 rounded-lg">
-        <p className="text-violet-400 text-xs text-center">
-          💡 Notification reminders will help keep you on track
-        </p>
-      </div>
     </div>
   );
 };
