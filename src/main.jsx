@@ -1,9 +1,22 @@
 import { StrictMode } from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { createRoot } from 'react-dom/client'
 import './index.css'
+import App from './App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Register service worker for web version
+if ('serviceWorker' in navigator && !window.electronAPI?.isElectron) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then((registration) => {
+        console.log('✅ SW registered:', registration);
+      })
+      .catch((error) => {
+        console.log('❌ SW registration failed:', error);
+      });
+  });
+}
+
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
