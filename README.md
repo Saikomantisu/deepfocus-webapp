@@ -1,12 +1,40 @@
-# React + Vite
+# 🧠 DeepFocus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern focus timer app with intelligent reminders to help you stay productive.
 
-Currently, two official plugins are available:
+![DeepFocus](https://img.shields.io/badge/Built%20with-React%20%2B%20Electron-61dafb?style=flat-square)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Cross-platform**: Desktop app (Electron) and web app
+- **Background notifications**: System-level reminders
+- **Flexible intervals**: 6 seconds to 30 minutes
+- **Session control**: Start, pause, resume, stop
+- **Modern UI**: Glass morphism design with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Development
+npm run electron-dev
+
+# Build
+npm run dist
+```
+
+## Usage
+
+1. Enter your task name
+2. Choose reminder frequency
+3. Start your focus session
+4. Get gentle check-in notifications
+
+## Tech Stack
+
+- React 18 + Vite
+- Electron 28+
+- Tailwind CSS
+- Native notifications
