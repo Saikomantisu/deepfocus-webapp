@@ -1,12 +1,16 @@
-# React + Vite
+# DeepFocus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application built with Vite, designed to help users manage tasks and improve focus. It includes hot module replacement (HMR) and ESLint configuration for a smooth development experience.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Install Dependencies**: Run `npm install` to install all necessary packages.
+2. **Development Server**: Use `npm run dev` to start the development server with HMR.
+3. **Build for Production**: Execute `npm run build` to create a production-ready build.
 
-## Expanding the ESLint configuration
+## Plugins
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **@vitejs/plugin-react**: Utilizes Babel for fast refresh.
+- **@vitejs/plugin-react-swc**: Utilizes SWC for fast refresh.
+
+For more advanced configurations, consider integrating TypeScript and `typescript-eslint` for type-aware linting.
