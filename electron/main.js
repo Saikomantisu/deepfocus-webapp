@@ -16,6 +16,7 @@ const createWindow = () => {
     height: 800,
     minWidth: 400,
     minHeight: 600,
+    title: 'DeepFocus',
     show: false,
     titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'default',
     webPreferences: {
