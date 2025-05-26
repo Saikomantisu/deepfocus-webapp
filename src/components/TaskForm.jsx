@@ -16,7 +16,6 @@ const TaskForm = ({ onStartTask }) => {
   };
 
   const intervalOptions = [
-    { value: 0.1, label: "6 seconds", display: "6 seconds" },
     { value: 0.5, label: "30 seconds", display: "30 seconds" },
     { value: 1, label: "1 minute", display: "1 minute" },
     { value: 2, label: "2 minutes", display: "2 minutes" },
